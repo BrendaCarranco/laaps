@@ -1,18 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
 .login-form{
-widows: 100%;
-max-width: 330px;
-padding: 15px;
-margin: auto;
-height: 100%;
-
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
 }
 
-.logo{
-position: fixed;
+ .container-div{ 
 
-
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px; 
+    align-items: center; 
+    justify-content: center ;  
+    display: table-cell;
 }
 
+/* .btn-google{
+    display: flex;
+    height: 100px;
+    width: 100px; 
+    align-items: center; 
+    justify-content: center ;  
+}
+ */
 
 
 

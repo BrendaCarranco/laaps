@@ -33,8 +33,8 @@ const Info = (props) => {
         <p>Contribye al cuidado del ambiente, lavamos tu auto en seco con insumos biodegradables</p>
       </Label>
       <div>
-        <Button onClick={loginGoogle}>Inicia sesión con Google</Button>
-      </div>
+      <Button className="btn-lg btn-gray btn-block" onClick={loginGoogle}>Inicia sesión con Google</Button>
+        </div>
       <div>
         <BlueButton label={'Registrate con tu correo electrónico'} onClick={emailReg} />
       </div>

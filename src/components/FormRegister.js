@@ -26,12 +26,10 @@ const FormRegister = () => {
                 <div className="text-center pt-3">
                     Usa 8 o más caracteres y combina letras y números
          </div>
-                <Button className="btn-lg btn-dark btn-block"
-                    placeholder="¡Empecemos!">
-                    <div className="text-center pt-3">
-                        Al registrate aceptas las Condiciones de Uso y la Política de privacidad de Laaps
-         </div>
-                </Button>
+                <Button className="btn-lg btn-dark btn-block">¡Empecemos!</Button>
+                <div className="text-center pt-3">
+                  Al registrate aceptas las Condiciones de Uso y la Política de privacidad de Laaps
+              </div>
                 <div className="text-center pt-3">
                     <a href='/login' >¿Ya tienes una cuenta? Inicia Sesión</a>
                 </div>

@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 import { UserContext } from '../context/UserProvider';
 import '../components/componentsCSS/Login.css';
 import { Button, Form, FormGroup, Input } from 'reactstrap';
-import { GoogleLoginButton } from 'react-social-login-buttons';
 
 
 import Image from '../img/logo.png';
@@ -26,12 +25,12 @@ const Login = (props) => {
 
 
             <div>
-                <img src={Image} alt='logo' />
+                <img className="container-div" src={Image} alt='logo' />
             </div>
 
-            <Form className="login-form">
+            <Form className="login-form" >
                 <div>
-                    <Button onClick={loginGoogle}>Inicia sesión con Google</Button>
+                    <Button className="btn-lg btn-gray btn-block" onClick={loginGoogle}>Inicia sesión con Google</Button>
                 </div>
                 <div className="text-center pt-3">
                     O
