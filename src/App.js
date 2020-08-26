@@ -16,6 +16,14 @@ import WorkersForm from './components/Admin/WorkersForm';
 import Config from './components/Admin/Config';
 import Home from './components/Map/Home';
 import Profile from './components/User/Profile';
+import FormRegister from './components/FormRegister';
+import Info from './components/Info';
+/* import Info from './components/Info';
+import Login from './components/Login';
+import FormRegister from './components/FormRegister';
+import Car from './components/Car';
+import Card from './components/Card'; */
+
 
 function App() {
 
@@ -24,10 +32,20 @@ function App() {
 
 
   return (
+
     <BrowserRouter>
       <Switch>
         <Route path='/login'>
           <Login />
+        </Route>
+        <Route path='/info'>
+          <Info />
+        </Route>
+        <Route path='/emailForm'>
+          <FormRegister />
+        </Route>
+        <Route path='/register'>
+          <FormRegister />
         </Route>
         <Route exact path='/dashboard'>
           {
@@ -51,6 +69,11 @@ function App() {
         <Route exact path='/dashbord/profile'>
           <Profile />
         </Route>
+        {/*         <Route exact path='/' component= { Login }/>  
+        <Route path='/info' component= { Info }/>
+        <Route path='/register' component= { FormRegister }/>
+        <Route path='/auto' component= { Car }/>
+        <Route path='/pay' component= { Card }/> */}
       </Switch>
     </BrowserRouter>
   );
