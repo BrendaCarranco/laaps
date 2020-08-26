@@ -27,6 +27,7 @@
     "react-mapbox-gl": "^4.8.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-toastify": "^6.0.8",
     "reactstrap": "^8.5.1",
     "socket.io": "^2.3.0",
     "use-supercluster": "^0.2.8"

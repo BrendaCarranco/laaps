@@ -25,10 +25,9 @@ const UserView = (props) => {
 
     const [fecha, setFecha] = useState('');
 
+    const dateUser = moment().format('MMMM Do YYYY, h:mm:ss a');
+
     const date = moment().utc().add('hours', 8).format('h:mm');
-
-
-    console.log(date);
 
     useEffect(() => {
         fetchUsers();
@@ -61,6 +60,37 @@ const UserView = (props) => {
     const toggleConfirm = () => {
         setModalConfirm(!modalConfirm);
     };
+
+    const sendData = async () => {
+        console.log('enviandoooo');
+        try {
+
+            const db = firebase.firestore();
+            const newWash = {
+                user: user.name,
+                email: user.email,
+                brand: user.brand,
+                model: user.model,
+                plate: user.plate,
+                pay: user.pay,
+                location: user.location,
+                uid: user.uid,
+                status: 'Pendiente',
+                time: dateUser
+            };
+            await db.collection('services').add(newWash);
+
+            console.log('enviado a firebase!');
+            toggleConfirm();
+
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+
+
+
 
     return (
         <Fragment>
@@ -155,7 +185,7 @@ const UserView = (props) => {
 
                             </div>
                             <div className='mt-4'>
-                                <BlueButton label={'Confirmar lavado'} />
+                                <BlueButton label={'Confirmar lavado'} onClick={sendData} />
                             </div>
                         </ModalBody>
                     </Modal>
