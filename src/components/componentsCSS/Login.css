@@ -1,0 +1,83 @@
+.login-form{
+widows: 100%;
+max-width: 330px;
+padding: 15px;
+margin: auto;
+height: 100%;
+
+}
+
+.logo{
+position: fixed;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40%;
+} */
+
+/* 
+.inputLogin{
+ border-style: solid;
+ border-color: transparent;
+ color:#E0D934;
+ font-family: Handlee;
+ text-align: center;
+}
+
+.PassLogin{
+    border-style: solid;
+    border-color: transparent;
+    color:#E0D934;
+    font-family: Handlee;
+    text-align: center;
+}
+
+.ButtonLogin{
+    border-style: solid;
+    border-color: transparent;
+    background-color: #88D724;
+    color: black;
+    font-family: Handlee;
+    text-align: center;
+    width: 2cm;
+}
+
+.ButtonLoginGoogle{
+    border-style: solid;
+    background-color: #88D724;
+    border-color: transparent;
+    color: black;
+    font-family: Handlee;
+    text-align: center;
+    width: 4cm;
+
+
+}
+ */
