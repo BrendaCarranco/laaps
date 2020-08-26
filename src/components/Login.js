@@ -1,10 +1,16 @@
 import React, { useContext } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import { UserContext } from '../context/UserProvider';
 
-const Login = () => {
+const Login = (props) => {
 
     const { handleGoogle } = useContext(UserContext);
+
+    const loginGoogle = () => {
+        handleGoogle();
+        return props.history.push('/dashboard');
+    };
 
     return (
         <div>
@@ -21,10 +27,10 @@ const Login = () => {
                 <button>Ingresar</button>
             </div>
             <button
-                onClick={handleGoogle}
+                onClick={loginGoogle}
             >Ingresa con google</button>
         </div>
     );
 };
 
-export default Login;
+export default withRouter(Login);
