@@ -31,5 +31,5 @@ Con nuestros precios accesibles, que incluyen lavado y encerado, nuestros colabo
 * * *
 ## Entregables 📝
 
-- Producto final: [link](https://laaps-carwash.web.app/login){:target="_blank" rel="noopener"}.
-- Muckup realizado en figma: [link a figma](https://www.figma.com/proto/UVIr160Bms2dyQcENWxJiG/LAAPS?node-id=67%3A937&viewport=223%2C158%2C0.09059112519025803&scaling=contain&hotspot-hints=0){:target="_blank" rel="noopener"} (Para visualizar MVP).
+- Producto final: [link](https://laaps-carwash.web.app/login).
+- Muckup realizado en figma: [link a figma](https://www.figma.com/proto/UVIr160Bms2dyQcENWxJiG/LAAPS?node-id=67%3A937&viewport=223%2C158%2C0.09059112519025803&scaling=contain&hotspot-hints=0) (Para visualizar MVP).
