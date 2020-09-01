@@ -31,7 +31,7 @@ export default class Mapbox extends Component {
 
     render() {
         const { viewport } = this.state;
-        const MAPBOX_TOKEN = 'pk.eyJ1IjoidmFueWF4ZWwiLCJhIjoiY2tlYTRoc2p1MDN4NDJybXl2OWl2YTB4ZCJ9.NI_za5LjY4UB1F51CzHC_w';
+        const MAPBOX_TOKEN = '////////////////';
 
         return (
             <ReactMapGL {...viewport}
