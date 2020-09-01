@@ -9,7 +9,7 @@ const UserLocation = () => {
         longitude: -99.0453629
     });
 
-    const apiKey = 'AIzaSyAJad0umGwSsH1UFdUzZEDCJ0BycOUOpbE';
+    const apiKey = 'API_KEY';
 
     const getLocation = async () => {
         if (navigator.geolocation) {
@@ -61,7 +61,7 @@ const UserLocation = () => {
                 <p>Adress: {geo.userAdress}</p>
                 <div style={{ margin: '100px' }}>
                     <img src={`https://maps.googleapis.com/maps/api/staticmap?center=Williamsburg,Brooklyn,NY&zoom=13&size=400x400&
-markers=color:blue%7Clabel:S%7C11211%7C11206%7C11222&key=AIzaSyAJad0umGwSsH1UFdUzZEDCJ0BycOUOpbE`} alt='mapa' />
+markers=color:blue%7Clabel:S%7C11211%7C11206%7C11222&key=API_KEY`} alt='mapa' />
                 </div>
 
             </div>
@@ -76,7 +76,7 @@ import { } from 'mapbox-gl'
 
 const UserLocation = () => {
 
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYnJlZW5ubiIsImEiOiJja2U5MjR2NGIxYW82MnlyM3MyYmpyN3cyIn0.hXSL9VZGYuQPhN_GhoAi7Q';
+    mapboxgl.accessToken = 'MAPBOX_TOKEN';
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
@@ -98,7 +98,7 @@ import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 
 const Map = ReactMapboxGl({
     accessToken:
-        'pk.eyJ1IjoiYnJlZW5ubiIsImEiOiJja2U5MjR2NGIxYW82MnlyM3MyYmpyN3cyIn0.hXSL9VZGYuQPhN_GhoAi7Q'
+        'MAPBOX_TOKEN'
 });
 
 const UserLocation = () => {
